@@ -23,20 +23,6 @@ Missing values occur only in the `type_2` column, indicating single-type Pokémo
 
 ---
 
-## Repository Structure
-pokemon-eda/
-│
-├── data/
-│ └── pokemon_stats_2025.csv
-│
-├── notebooks/
-│ └── Exploratory_Data_Analysis_Pokemon_Stats.ipynb
-│
-├── README.md
-│
-└── requirements.txt
----
-
 ## Tools & Libraries Used
 
 The following libraries are listed in `requirements.txt` and are used in this project:
