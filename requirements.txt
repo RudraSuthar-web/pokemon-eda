@@ -1,4 +1,7 @@
-numpy
-pandas
-matplotlib
-seaborn
+numpy          # Numerical computations and array operations
+pandas         # Data manipulation and analysis
+matplotlib     # Basic data visualizations (static plots)
+seaborn        # Statistical data visualization (built on matplotlib)
+plotly         # Interactive visualizations (hover, zoom, pan)
+nbformat       # Required for rendering Plotly charts in Jupyter
+ipython        # Interactive Python support for notebooks
