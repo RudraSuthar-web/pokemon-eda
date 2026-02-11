@@ -48,15 +48,40 @@ The following libraries are listed in `requirements.txt` and are used in this pr
 ---
 
 ## Key Analysis Performed
+
 - Dataset overview and statistical summary
 - Missing values analysis
-- Univariate analysis (distributions and outliers)
+- Univariate analysis (distribution of stats)
+- Defense-based outlier detection using IQR method
 - Categorical analysis of Pokémon types
-- Bivariate analysis (relationships between stats)
+- Type-based interactive filtering dashboard
+- Bivariate analysis (Attack vs Defense, Speed vs Experience)
 - Correlation analysis using heatmaps
 - Multivariate analysis using scatter matrix plots
 
-Some visualizations are **interactive**, allowing zooming, panning, and hover-based exploration.
+Some visualizations are interactive, allowing:
+- Hover-based data inspection
+- Zooming and panning
+- Type-based filtering
+- Dynamic legend toggling
+
+---
+
+## Statistical Enhancement
+
+### Outlier Detection (Defense)
+
+The Interquartile Range (IQR) method was used to detect statistical
+outliers in the **Defense** stat:
+
+- Q1 (25th percentile)
+- Q3 (75th percentile)
+- IQR = Q3 − Q1
+- Outliers defined as values outside:
+  - Q1 − 1.5 × IQR
+  - Q3 + 1.5 × IQR
+
+This helps identify Pokémon with exceptionally strong defensive capabilities.
 
 ---
 
